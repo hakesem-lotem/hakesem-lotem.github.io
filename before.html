@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>שאלון לפני המפגש · הקסם של לוטם</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&family=Heebo:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="brand" href="./"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"/></svg>הקסם של לוטם</a>
+  <h1>שאלון לפני המפגש</h1>
+  <div class="ornament"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"/></svg></div>
+  <p class="lead">כמה שאלות חשובות, כדי שהמפגש יעבור בבטחה, בכיף ובדיוק כמו שאתם רוצים.</p>
+
+  <form class="wa" data-title="שאלון לפני המפגש" novalidate>
+
+    <section class="card" data-title="פרטי המפגש">
+      <h2><span class="num">א</span>פרטי המפגש</h2>
+      <div class="q" data-label="תאריך"><label class="req" for="b-date">תאריך</label><input id="b-date" type="date" required></div>
+      <div class="pair">
+        <div class="q" data-label="שעת הגעה"><label for="b-in">שעת הגעה</label><input id="b-in" type="time"></div>
+        <div class="q" data-label="חזרה משוערת"><label for="b-out">חזרה משוערת</label><input id="b-out" type="time"></div>
+      </div>
+      <div class="q" data-label="כתובת"><label for="b-addr">כתובת</label><input id="b-addr" type="text" autocomplete="street-address"></div>
+      <div class="q" data-label="קוד כניסה / חניה"><label for="b-code">קוד כניסה / חניה</label><input id="b-code" type="text"></div>
+      <div class="q" data-label="המסלול הפעם">
+        <span class="lab">המסלול הפעם</span>
+        <div class="chips">
+          <label><input type="checkbox" value="שמירה"><span>שמירה</span></label>
+          <label><input type="checkbox" value="בישול"><span>בישול</span></label>
+          <label><input type="checkbox" value="שיעור פרטי"><span>שיעור פרטי</span></label>
+          <label><input type="checkbox" value="יצירה והפעלה"><span>יצירה והפעלה</span></label>
+          <label><input type="checkbox" value="חוויה פרטית"><span>חוויה פרטית</span></label>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" data-title="אנשי קשר">
+      <h2><span class="num">ב</span>אנשי קשר</h2>
+      <div class="pair">
+        <div class="q" data-label="הורה 1" style="flex:1.3"><label class="req" for="p1">הורה 1</label><input id="p1" type="text" required></div>
+        <div class="q" data-label="טלפון הורה 1"><label class="req" for="p1t">טלפון</label><input id="p1t" type="tel" inputmode="tel" required></div>
+      </div>
+      <div class="pair">
+        <div class="q" data-label="הורה 2" style="flex:1.3"><label for="p2">הורה 2</label><input id="p2" type="text"></div>
+        <div class="q" data-label="טלפון הורה 2"><label for="p2t">טלפון</label><input id="p2t" type="tel" inputmode="tel"></div>
+      </div>
+      <div class="pair">
+        <div class="q" data-label="איש קשר נוסף" style="flex:1.3"><label for="p3">איש קשר נוסף</label><input id="p3" type="text" placeholder="קרוב לבית"></div>
+        <div class="q" data-label="טלפון איש קשר נוסף"><label for="p3t">טלפון</label><input id="p3t" type="tel" inputmode="tel"></div>
+      </div>
+      <div class="q" data-label="איפה נמצאים ההורים"><label for="b-where">איפה תהיו במהלך המפגש?</label><input id="b-where" type="text"></div>
+      <div class="q" data-label="רופא/ת ילדים / קופה"><label for="b-doc">רופא/ת ילדים / קופת חולים</label><input id="b-doc" type="text"></div>
+    </section>
+
+    <section class="card" data-title="על הילדים">
+      <h2><span class="num">ג</span>על הילדים<span class="hint">חשוב במיוחד</span></h2>
+      <div class="children"></div>
+      <button type="button" class="add">+ הוספת ילד/ה</button>
+    </section>
+
+    <section class="card" data-title="במטבח">
+      <h2><span class="num">ד</span>במטבח<span class="hint">לסדנאות בישול</span></h2>
+      <div class="q" data-label="מותר לילדים (בהשגחה צמודה)">
+        <span class="lab">מותר לילדים להשתמש (בהשגחה צמודה)</span>
+        <div class="chips">
+          <label><input type="checkbox" value="כיריים"><span>כיריים</span></label>
+          <label><input type="checkbox" value="תנור"><span>תנור</span></label>
+          <label><input type="checkbox" value="סכין"><span>סכין</span></label>
+          <label><input type="checkbox" value="מיקסר / בלנדר"><span>מיקסר / בלנדר</span></label>
+        </div>
+      </div>
+      <div class="q" data-label="כשרות">
+        <span class="lab">כשרות</span>
+        <div class="chips">
+          <label><input type="radio" name="kosher" value="לא מקפידים"><span>לא מקפידים</span></label>
+          <label><input type="radio" name="kosher" value="מקפידים — חלבי/בשרי לפי כלים מסומנים"><span>מקפידים — חלבי / בשרי</span></label>
+        </div>
+      </div>
+      <div class="q" data-label="מאכלים שאסור / לא רצוי להכין"><label for="b-nofood">מאכלים שאסור או לא רצוי להכין</label><input id="b-nofood" type="text"></div>
+    </section>
+
+    <section class="card" data-title="שגרה">
+      <h2><span class="num">ה</span>שגרה</h2>
+      <div class="q" data-label="ארוחת ערב"><label for="b-dinner">ארוחת ערב — מה ומתי</label><input id="b-dinner" type="text"></div>
+      <div class="q" data-label="שעת שינה"><label for="b-sleep">שעת שינה</label><input id="b-sleep" type="time"></div>
+      <div class="pair">
+        <div class="q" data-label="מקלחת">
+          <span class="lab">מקלחת</span>
+          <div class="chips">
+            <label><input type="radio" name="shower" value="כן"><span>כן</span></label>
+            <label><input type="radio" name="shower" value="לא"><span>לא</span></label>
+          </div>
+        </div>
+        <div class="q" data-label="צחצוח שיניים">
+          <span class="lab">צחצוח שיניים</span>
+          <div class="chips">
+            <label><input type="radio" name="teeth" value="כן"><span>כן</span></label>
+            <label><input type="radio" name="teeth" value="לא"><span>לא</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="q" data-label="טקס שינה"><label for="b-ritual">טקס שינה</label><span class="sub">סיפור, שיר, בובה, אור לילה…</span><input id="b-ritual" type="text"></div>
+      <div class="q" data-label="מסכים"><label for="b-screens">מסכים — מה מותר ולכמה זמן</label><input id="b-screens" type="text"></div>
+    </section>
+
+    <section class="card" data-title="כללי הבית והרשאות">
+      <h2><span class="num">ו</span>כללי הבית והרשאות</h2>
+      <div class="q" data-label="יציאה לגינה / לפארק">
+        <span class="lab">יציאה לגינה / לפארק</span>
+        <div class="chips">
+          <label><input type="radio" name="out" value="מותר"><span>מותר</span></label>
+          <label><input type="radio" name="out" value="רק לחצר"><span>רק לחצר</span></label>
+          <label><input type="radio" name="out" value="לא"><span>לא</span></label>
+        </div>
+      </div>
+      <div class="q" data-label="חברים שמגיעים לביקור">
+        <span class="lab">חברים שמגיעים לביקור</span>
+        <div class="chips">
+          <label><input type="radio" name="guests" value="מותר"><span>מותר</span></label>
+          <label><input type="radio" name="guests" value="רק בתיאום איתנו"><span>רק בתיאום איתנו</span></label>
+          <label><input type="radio" name="guests" value="לא"><span>לא</span></label>
+        </div>
+      </div>
+      <div class="q" data-label="לשלוח תמונות מהמפגש">
+        <span class="lab">לשלוח לכם תמונות מהמפגש?</span>
+        <div class="chips">
+          <label><input type="radio" name="photos" value="כן"><span>כן</span></label>
+          <label><input type="radio" name="photos" value="לא"><span>לא</span></label>
+        </div>
+      </div>
+      <div class="q" data-label="חיות מחמד"><label for="b-pets">חיות מחמד בבית</label><input id="b-pets" type="text"></div>
+      <div class="q" data-label="חדרים / חפצים שאסור לגעת בהם"><label for="b-nogo">חדרים או חפצים שאסור לגעת בהם</label><input id="b-nogo" type="text"></div>
+    </section>
+
+    <section class="card" data-title="בקשות מיוחדות">
+      <h2><span class="num">ז</span>בקשות מיוחדות למפגש הזה</h2>
+      <div class="q" data-label="בקשות"><textarea aria-label="בקשות מיוחדות למפגש הזה"></textarea></div>
+    </section>
+
+    <p class="note">בכל מקרה חירום אתקשר קודם למד״א (101) ומיד אחר כך אליכם.</p>
+
+    <section class="card" data-title="אישור">
+      <h2><span class="num">ח</span>אישור</h2>
+      <div class="q" data-label="מילא/ה את הטופס"><label class="req" for="b-signer">שם ההורה שממלא/ת</label><input id="b-signer" type="text" required></div>
+      <div class="q" data-label="אישור">
+        <div class="chips stack">
+          <label><input type="checkbox" value="הפרטים נכונים ומעודכנים"><span>אני מאשר/ת שהפרטים נכונים ומעודכנים</span></label>
+        </div>
+      </div>
+    </section>
+
+    <button class="send" type="submit">שליחה בוואטסאפ</button>
+    <div class="error" role="alert"></div>
+    <p class="after">תודה! נתראה במפגש ✨</p>
+
+    <template id="child-template">
+      <div class="child">
+        <div class="child-h"><b>ילד/ה</b><button type="button" class="rm">הסרה ✕</button></div>
+        <div class="pair">
+          <div class="q" data-label="שם" style="flex:2"><label>שם</label><input type="text"></div>
+          <div class="q" data-label="גיל"><label>גיל</label><input type="number" inputmode="numeric" min="0" max="18"></div>
+        </div>
+        <div class="q" data-label="אלרגיות ורגישויות"><label>אלרגיות ורגישויות (מזון ואחר)</label><input type="text"></div>
+        <div class="q" data-label="תרופות"><label>תרופות</label><span class="sub">רק לפי הנחיה כתובה של ההורים</span><input type="text"></div>
+        <div class="q" data-label="מה מרגיע"><label>מה מרגיע אותו/ה?</label><input type="text"></div>
+        <div class="q" data-label="פחדים / להימנע"><label>פחדים או דברים שכדאי להימנע מהם</label><input type="text"></div>
+      </div>
+    </template>
+  </form>
+
+  <div class="foot">הקסם של לוטם</div>
+</div>
+<script src="form.js"></script>
+</body>
+</html>

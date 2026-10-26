@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>טופס היכרות · הקסם של לוטם</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&family=Heebo:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="brand" href="./"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"/></svg>הקסם של לוטם</a>
+  <h1>טופס היכרות<br>ותיאום ציפיות</h1>
+  <div class="ornament"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"/></svg></div>
+  <p class="lead">כדי שאוכל להתאים לכם מסלול והצעת מחיר מדויקים. בסוף לוחצים "שליחה" והתשובות נשלחות אליי בוואטסאפ.</p>
+
+  <form class="wa" data-title="טופס היכרות ותיאום ציפיות" novalidate>
+
+    <section class="card" data-title="פרטי המשפחה">
+      <h2><span class="num">א</span>פרטי המשפחה</h2>
+      <div class="q" data-label="שם ההורה"><label class="req" for="f-name">שם ההורה / ההורים</label><input id="f-name" type="text" required autocomplete="name"></div>
+      <div class="q" data-label="טלפון"><label class="req" for="f-tel">טלפון</label><input id="f-tel" type="tel" required inputmode="tel" autocomplete="tel"></div>
+      <div class="q" data-label="כתובת / יישוב"><label for="f-addr">כתובת / יישוב</label><input id="f-addr" type="text" autocomplete="street-address"></div>
+      <div class="q" data-label="איך הגיעו אליי"><label for="f-ref">איך הגעתם אליי?</label><input id="f-ref" type="text"></div>
+    </section>
+
+    <section class="card" data-title="הילדים">
+      <h2><span class="num">ב</span>הילדים</h2>
+      <div class="children"></div>
+      <button type="button" class="add">+ הוספת ילד/ה</button>
+      <div class="q" data-label="חברים / בני דודים שעשויים להצטרף">
+        <span class="lab">האם ייתכן שיצטרפו חברים או בני דודים?</span>
+        <div class="chips">
+          <label><input type="radio" name="friends" value="לא"><span>לא</span></label>
+          <label><input type="radio" name="friends" value="לפעמים"><span>לפעמים</span></label>
+          <label><input type="radio" name="friends" value="כן"><span>כן</span></label>
+        </div>
+        <input class="extra" type="text" placeholder="כמה ילדים בערך?" data-prefix="כמות:">
+      </div>
+    </section>
+
+    <section class="card" data-title="מה מעניין אתכם">
+      <h2><span class="num">ג</span>מה מעניין אתכם?<span class="hint">אפשר כמה</span></h2>
+      <div class="q" data-label="מסלולים">
+        <div class="chips stack">
+          <label><input type="checkbox" value="שמירה קלאסית"><span>שמירה קלאסית<small>נוכחות רגועה, משחק, ארוחה והשכבה</small></span></label>
+          <label><input type="checkbox" value="השף הצעיר"><span>השף הצעיר<small>סדנת בישול ועצמאות במטבח</small></span></label>
+          <label><input type="checkbox" value="מורה פרטית"><span>מורה פרטית<small>שיעור פרטי או עזרה בשיעורי בית</small></span></label>
+          <label><input type="checkbox" value="סטודיו יצירה והפעלות"><span>סטודיו יצירה והפעלות<small>יצירה, משחקי תנועה ופעילויות</small></span></label>
+          <label><input type="checkbox" value="חוויה פרטית"><span>חוויה פרטית<small>יום הולדת, מפגש חברים או פעילות לחופשה</small></span></label>
+        </div>
+      </div>
+      <div class="q" data-label="מקצוע לשיעור פרטי"><label for="f-subj">אם מעניין שיעור פרטי — באיזה מקצוע?</label><input id="f-subj" type="text"></div>
+    </section>
+
+    <section class="card" data-title="תדירות ושעות">
+      <h2><span class="num">ד</span>תדירות ושעות</h2>
+      <div class="q" data-label="תדירות">
+        <span class="lab">באיזו תדירות?</span>
+        <div class="chips">
+          <label><input type="radio" name="freq" value="חד-פעמי"><span>חד-פעמי</span></label>
+          <label><input type="radio" name="freq" value="פעם בשבוע"><span>פעם בשבוע</span></label>
+          <label><input type="radio" name="freq" value="כמה פעמים בשבוע"><span>כמה פעמים בשבוע</span></label>
+          <label><input type="radio" name="freq" value="לפי הצורך"><span>לפי הצורך</span></label>
+        </div>
+      </div>
+      <div class="q" data-label="ימים מועדפים">
+        <span class="lab">ימים מועדפים</span>
+        <div class="chips">
+          <label><input type="checkbox" value="א׳"><span>א׳</span></label>
+          <label><input type="checkbox" value="ב׳"><span>ב׳</span></label>
+          <label><input type="checkbox" value="ג׳"><span>ג׳</span></label>
+          <label><input type="checkbox" value="ד׳"><span>ד׳</span></label>
+          <label><input type="checkbox" value="ה׳"><span>ה׳</span></label>
+          <label><input type="checkbox" value="ו׳"><span>ו׳</span></label>
+          <label><input type="checkbox" value="מוצ״ש"><span>מוצ״ש</span></label>
+        </div>
+      </div>
+      <div class="pair">
+        <div class="q" data-label="משעה"><label for="f-from">משעה</label><input id="f-from" type="time"></div>
+        <div class="q" data-label="עד שעה"><label for="f-to">עד שעה</label><input id="f-to" type="time"></div>
+      </div>
+      <div class="q" data-label="תאריך התחלה רצוי"><label for="f-start">תאריך התחלה רצוי</label><input id="f-start" type="date"></div>
+    </section>
+
+    <section class="card" data-title="ציפיות ודרך העבודה">
+      <h2><span class="num">ה</span>ציפיות ודרך העבודה</h2>
+      <div class="q" data-label="ארוחה">
+        <span class="lab">ארוחה</span>
+        <div class="chips">
+          <label><input type="radio" name="meal" value="אני מכינה"><span>אני מכינה</span></label>
+          <label><input type="radio" name="meal" value="רק לחמם"><span>רק לחמם</span></label>
+          <label><input type="radio" name="meal" value="הילדים כבר יאכלו"><span>הילדים כבר יאכלו</span></label>
+          <label><input type="radio" name="meal" value="לא רלוונטי"><span>לא רלוונטי</span></label>
+        </div>
+      </div>
+      <div class="q" data-label="חומרי גלם וחומרי יצירה">
+        <span class="lab">חומרי גלם לסדנאות וחומרי יצירה</span>
+        <div class="chips">
+          <label><input type="radio" name="mat" value="אני מביאה הכול"><span>אני מביאה הכול</span></label>
+          <label><input type="radio" name="mat" value="משתמשים במה שיש בבית"><span>משתמשים במה שיש בבית</span></label>
+          <label><input type="radio" name="mat" value="נתאם כל פעם"><span>נתאם כל פעם</span></label>
+        </div>
+      </div>
+      <div class="q" data-label="מסכים">
+        <span class="lab">מסכים במהלך המפגש</span>
+        <div class="chips">
+          <label><input type="radio" name="screens" value="מותר"><span>מותר</span></label>
+          <label><input type="radio" name="screens" value="בזמן מוגבל"><span>בזמן מוגבל</span></label>
+          <label><input type="radio" name="screens" value="בלי מסכים"><span>בלי מסכים</span></label>
+        </div>
+      </div>
+      <div class="q" data-label="השכבה לישון">
+        <span class="lab">השכבה לישון</span>
+        <div class="chips">
+          <label><input type="radio" name="bed" value="כן"><span>כן</span></label>
+          <label><input type="radio" name="bed" value="לא"><span>לא</span></label>
+          <label><input type="radio" name="bed" value="לפעמים"><span>לפעמים</span></label>
+        </div>
+      </div>
+      <div class="q" data-label="הכי חשוב שיקרה"><label for="f-want">מה הכי חשוב לכם שיקרה במפגש?</label><textarea id="f-want"></textarea></div>
+      <div class="q" data-label="חשוב שלא יקרה"><label for="f-dont">יש משהו שחשוב לכם שלא יקרה?</label><textarea id="f-dont"></textarea></div>
+    </section>
+
+    <section class="card" data-title="עוד דברים שחשוב לדעת">
+      <h2><span class="num">ו</span>עוד משהו שכדאי שאדע</h2>
+      <div class="q" data-label="הערות">
+        <span class="sub">אופי הילדים, צרכים מיוחדים, מה עבד (או לא עבד) עם מטפלות קודמות</span>
+        <textarea aria-label="עוד משהו שכדאי שאדע"></textarea>
+      </div>
+    </section>
+
+    <button class="send" type="submit">שליחה בוואטסאפ</button>
+    <div class="error" role="alert"></div>
+    <p class="after">תודה רבה! אחזור אליכם בקרוב עם הצעה מותאמת אישית.</p>
+
+    <template id="child-template">
+      <div class="child">
+        <div class="child-h"><b>ילד/ה</b><button type="button" class="rm">הסרה ✕</button></div>
+        <div class="pair">
+          <div class="q" data-label="שם" style="flex:2"><label>שם</label><input type="text"></div>
+          <div class="q" data-label="גיל"><label>גיל</label><input type="number" inputmode="numeric" min="0" max="18"></div>
+        </div>
+        <div class="q" data-label="גן / כיתה"><label>גן / כיתה</label><input type="text"></div>
+        <div class="q" data-label="אוהב/ת לעשות"><label>מה הוא/היא אוהב/ת לעשות?</label><input type="text"></div>
+      </div>
+    </template>
+  </form>
+
+  <div class="foot">הקסם של לוטם</div>
+</div>
+<script src="form.js"></script>
+</body>
+</html>
